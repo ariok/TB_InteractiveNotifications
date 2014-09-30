@@ -409,6 +409,7 @@
 				DA9A894C19D9674800FE3F92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA9A894D19D9674800FE3F92 /* Build configuration list for PBXNativeTarget "TB_InteractiveNotificationsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +418,7 @@
 				DA9A894F19D9674800FE3F92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
