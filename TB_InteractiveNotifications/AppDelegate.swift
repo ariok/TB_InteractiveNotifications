@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // increment Action
         let incrementAction = UIMutableUserNotificationAction()
-        incrementAction.identifier = Actions.increment.toRaw()
+        incrementAction.identifier = Actions.increment.rawValue
         incrementAction.title = "ADD +1!"
         incrementAction.activationMode = UIUserNotificationActivationMode.Background
         incrementAction.authenticationRequired = true
@@ -49,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // decrement Action
         let decrementAction = UIMutableUserNotificationAction()
-        decrementAction.identifier = Actions.decrement.toRaw()
+        decrementAction.identifier = Actions.decrement.rawValue
         decrementAction.title = "SUB -1"
         decrementAction.activationMode = UIUserNotificationActivationMode.Background
         decrementAction.authenticationRequired = true
@@ -57,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // reset Action
         let resetAction = UIMutableUserNotificationAction()
-        resetAction.identifier = Actions.reset.toRaw()
+        resetAction.identifier = Actions.reset.rawValue
         resetAction.title = "RESET"
         resetAction.activationMode = UIUserNotificationActivationMode.Foreground
         // NOT USED resetAction.authenticationRequired = true
@@ -119,7 +119,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Handle notification action *****************************************
         if notification.category == categoryID {
             
-            let action:Actions = Actions.fromRaw(identifier!)!
+            let action:Actions = Actions(rawValue: identifier!)!
             let counter = Counter();
             
             switch action{
